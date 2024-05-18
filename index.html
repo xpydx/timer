@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="shortcut icon" href="fb-stopwatch2.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-[80%] mx-auto mt-32 text-center gap-96 h-96 bg-slate-900">
+      <h1
+        class="mx-auto justify-center text-5xl shadow-lg mb-12 text-white shadow-black"
+      >
+        countdown timer
+      </h1>
+
+      <div class="mx-auto text-2xl mb-5">
+        <input id="tanggal" type="date" name="" />
+        <input id="waktu" type="time" />
+      </div>
+      <div class="bg-red-500 justify-center flex text-4xl w-52 mx-auto">
+        <h1 id="day">00:00:00:00</h1>
+      </div>
+      <div class="text-4xl mt-7">
+        <button onclick="starttime()" id="mulai" class="bg-[#1fc501] px-3 py-1">
+          start
+        </button>
+        <button id="berhenti" class="px-3 bg-[#fe0000] py-1">pause</button>
+        <button id="ulang" class="px-3 bg-yellow-500 py-1">reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
